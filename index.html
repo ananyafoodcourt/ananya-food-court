@@ -2,193 +2,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ananya Food Court</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ananya Food Court</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-   <style>
+<style>
+
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #ffffff;
-  color: #222;
-  text-align: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #333;
+    text-align: center;
 }
 
+/* HEADER */
 header {
-  background: #c62828;
-  color: white;
-  padding: 20px;
+    background: #c62828;
+    color: white;
+    padding: 25px 15px;
 }
 
+/* SECTIONS */
 section {
-  padding: 40px 20px;
+    padding: 40px 15px;
 }
 
 h2 {
-  color: #c62828;
+    color: #c62828;
+    margin-bottom: 20px;
 }
 
-.btn {
-  background: #2e7d32;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 25px;
-  display: inline-block;
-  margin-top: 15px;
+/* ABOUT */
+.about-text {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
 }
 
-img {
-  width: 90%;
-  max-width: 400px;
-  height: auto;
-  margin: 15px 0;
-  border-radius: 10px;
-}
-body{
-   margin:0;
-   font-family:'Poppins', sans-serif;
-   text-align:center;
-   
+/* WHY */
+.why {
+    background: #f5f5f5;
 }
 
-.container{
-    padding:60px 20px;
+.why p {
+    font-size: 17px;
+    margin: 8px 0;
 }
 
-.tagline{
-    font-size:18px;
-    margin-bottom:30px;
+/* SPECIAL DISHES */
+.special-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.btn{
-    display:inline-block;
-    padding:14px 30px;
-    margin:10px;
-    background:#FFD369;
-    color:black;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-    transition:0.3s;
+.special-container img {
+    width: 100%;
+    max-width: 250px;   /* THIS prevents zoom issue */
+    height: auto;
+    border-radius: 10px;
 }
 
-.btn:hover{
-    background:white;
-    color:black;
+/* CONTACT */
+.contact p {
+    margin: 6px 0;
 }
 
-.info{
-    margin-top:40px;
-    font-size:16px;
-    line-height:28px;
+/* FOOTER */
+footer {
+    background: #c62828;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
 }
 
-.footer{
-   margin-top:50px;
-   font-size:14px;
+/* DESKTOP IMPROVEMENT */
+@media (min-width: 768px) {
+    .special-container img {
+        max-width: 220px;
+    }
 }
 
-img {
-  width: 90%;
-  max-width: 400px;
-  height: auto;
-  margin: 15px 0;
-  border-radius: 10px;
-}
-h1 {
-  font-size: 34px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  color: #FFD369;
-  font-weight: 600;
-}
-
-p {
-  font-size: 16px;
-  color: #eeeeee;
-  margin-bottom: 30px;
-}    
 </style>
-
 </head>
+
 <body>
 
-<!-- HEADER -->
-<header style="background:#c62828; color:white; padding:20px; text-align:center;">
-  <h1 style="margin:0;">Ananya Food Court</h1>
+<header>
+    <h1>Ananya Food Court</h1>
+    <p>Delicious Food | Happy Moments</p>
 </header>
 
-<!-- HERO -->
-<section style="padding:50px 20px; text-align:center;">
-  <h2 style="color:#c62828;">Authentic Indian • Chinese • Tandoor</h2>
-  <p style="max-width:600px; margin:auto;">
-    Serving fresh, hygienic and delicious food with love.
-  </p>
-
-  <div style="margin-top:20px;">
-    <a href="https://wa.me/919334063227" 
-       style="background:#2e7d32; color:white; padding:12px 25px; text-decoration:none; border-radius:25px;">
-       Order on WhatsApp
-    </a>
-  </div>
+<section>
+    <h2>About Us</h2>
+    <p class="about-text">
+        Welcome to Ananya Food Court. We serve freshly cooked authentic food
+        made with premium quality ingredients in a comfortable family environment.
+    </p>
 </section>
 
-<!-- ABOUT -->
-<section style="background:#f5f5f5; padding:40px 20px; text-align:center;">
-  <h2 style="color:#c62828;">About Us</h2>
-  <p style="max-width:700px; margin:auto;">
-    Ananya Food Court is a family restaurant located in Harnichak, Anisabad, Patna.
-    We provide quality food, fast service and a comfortable dining experience.
-  </p>
+<section class="why">
+    <h2>Why Choose Us</h2>
+    <p>Freshly Cooked Authentic Food</p>
+    <p>Fast & On-Time Service</p>
+    <p>Premium Quality Ingredients</p>
+    <p>Comfortable Family Environment</p>
 </section>
 
-<!-- WHY CHOOSE US -->
-<section style="padding:40px 20px; text-align:center;">
-<p style="color:#333; font-size:18px; margin:10px 0;">
-Freshly Cooked Authentic Food
-</p>
+<section>
+    <h2>Our Special Dishes</h2>
 
-<p style="color:#333; font-size:18px; margin:10px 0;">
-Fast & On-Time Service
-</p>
+    <div class="special-container">
+        <img src="dish1.jpeg" alt="Dish 1">
+        <img src="dish2.jpeg" alt="Dish 2">
+        <img src="dish3.jpeg" alt="Dish 3">
+        <img src="dish4.jpeg" alt="Dish 4">
+        <img src="dish5.jpeg" alt="Dish 5">
+    </div>
 
-<p style="color:#333; font-size:18px; margin:10px 0;">
-Premium Quality Ingredients
-</p>
-
-<p style="color:#333; font-size:18px; margin:10px 0;">
-Comfortable Family Environment
-</p>
 </section>
 
-<!-- SPECIAL DISHES -->
-<section style="background:#f5f5f5; padding:40px 20px; text-align:center;">
-  <h2 style="color:#c62828;">Our Special Dishes</h2>
-
-<img src="dish1.jpg.jpeg" style="width:90%; max-width:400px; margin:15px; border-radius:10px;">
-<img src="dish2.jpg.jpeg" style="width:90%; max-width:400px; margin:15px; border-radius:10px;">
-<img src="dish3.jpg.jpeg" style="width:90%; max-width:400px; margin:15px; border-radius:10px;">
-<img src="dish4.jpg.jpeg" style="width:90%; max-width:400px; margin:15px; border-radius:10px;">
-<img src="dish5.jpg.jpeg" style="width:90%; max-width:400px; margin:15px; border-radius:10px;">  
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Harnichak, Kisan Colony, Anisabad, Patna</p>
+    <p>📞 +91 9334063227</p>
+    <p>⏰ Open Daily: 11:00 AM – 11:00 PM</p>
 </section>
 
-<!-- CONTACT -->
-<section style="padding:40px 20px; text-align:center;">
-  <h2 style="color:#c62828;">Contact Us</h2>
-  <p>📍 Harnichak, Kisan Colony, Anisabad, Patna</p>
-  <p>📞 +91 9334063227</p>
-  <p>🕒 Open Daily: 11:00 AM – 11:00 PM</p>
-</section>
-
-<!-- FOOTER -->
-<footer style="background:#c62828; color:white; padding:15px; text-align:center;">
-  © 2026 Ananya Food Court | All Rights Reserved
+<footer>
+    © 2026 Ananya Food Court | All Rights Reserved
 </footer>
 
 </body>
-
 </html>
-

@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -24,14 +23,29 @@ header {
     padding: 25px 15px;
 }
 
-/* SECTIONS */
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* CATEGORY STRIP */
+.categories {
+    background: #2e7d32;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* SECTION */
 section {
     padding: 40px 15px;
 }
 
 h2 {
     color: #c62828;
-    margin-bottom: 20px;
 }
 
 /* ABOUT */
@@ -47,11 +61,11 @@ h2 {
 }
 
 .why p {
-    font-size: 17px;
     margin: 8px 0;
+    font-size: 17px;
 }
 
-/* SPECIAL DISHES */
+/* DISHES */
 .special-container {
     display: flex;
     flex-wrap: wrap;
@@ -61,14 +75,28 @@ h2 {
 
 .special-container img {
     width: 100%;
-    max-width: 250px;   /* THIS prevents zoom issue */
+    max-width: 250px;
     height: auto;
     border-radius: 10px;
 }
 
-/* CONTACT */
-.contact p {
-    margin: 6px 0;
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.menu-btn {
+    background: #c62828;
+}
+
+.whatsapp-btn {
+    background: #25D366;
 }
 
 /* FOOTER */
@@ -79,13 +107,11 @@ footer {
     margin-top: 20px;
 }
 
-/* DESKTOP IMPROVEMENT */
 @media (min-width: 768px) {
     .special-container img {
         max-width: 220px;
     }
 }
-
 </style>
 </head>
 
@@ -96,11 +122,16 @@ footer {
     <p>Delicious Food | Happy Moments</p>
 </header>
 
+<div class="categories">
+    Indian | Chinese | Tandoor
+</div>
+
 <section>
     <h2>About Us</h2>
     <p class="about-text">
-        Welcome to Ananya Food Court. We serve freshly cooked authentic food
-        made with premium quality ingredients in a comfortable family environment.
+        Welcome to Ananya Food Court. We serve freshly cooked authentic Indian,
+        Chinese and Tandoor dishes made with premium quality ingredients.
+        Enjoy a comfortable family dining experience with us.
     </p>
 </section>
 
@@ -114,18 +145,30 @@ footer {
 
 <section>
     <h2>Our Special Dishes</h2>
-
     <div class="special-container">
-        <img src="dish1.jpeg" alt="Dish 1">
-        <img src="dish2.jpeg" alt="Dish 2">
-        <img src="dish3.jpeg" alt="Dish 3">
-        <img src="dish4.jpeg" alt="Dish 4">
-        <img src="dish5.jpeg" alt="Dish 5">
+        <img src="dish1.jpeg" alt="">
+        <img src="dish2.jpeg" alt="">
+        <img src="dish3.jpeg" alt="">
+        <img src="dish4.jpeg" alt="">
+        <img src="dish5.jpeg" alt="">
     </div>
-
 </section>
 
-<section class="contact">
+<section>
+    <h2>View Our Menu</h2>
+    <!-- Upload your menu.pdf file in GitHub and keep name as menu.pdf -->
+    <a href="menu.pdf" target="_blank" class="btn menu-btn">View Menu</a>
+</section>
+
+<section>
+    <h2>Order on WhatsApp</h2>
+    <!-- Replace number if needed -->
+    <a href="https://wa.me/919334063227" target="_blank" class="btn whatsapp-btn">
+        Chat on WhatsApp
+    </a>
+</section>
+
+<section>
     <h2>Contact Us</h2>
     <p>📍 Harnichak, Kisan Colony, Anisabad, Patna</p>
     <p>📞 +91 9334063227</p>

@@ -130,14 +130,33 @@ footer {
   text-decoration: none;
   font-size: 16px;
 }
+/* Floating Contact Buttons */
 
-.sticky-contact a:first-child {
+.floating-btn {
+  position: fixed;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.call-btn {
+  bottom: 90px;
   background: #1565c0;
 }
 
-.sticky-contact a:last-child {
+.whatsapp-btn {
+  bottom: 20px;
   background: #25D366;
-}
+}    
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -209,9 +228,12 @@ footer {
     once: true
   });
 </script>
-<div class="sticky-contact">
-  <a href="tel:+919334063227">📞 Call Now</a>
-  <a href="https://wa.me/919334063227" target="_blank">💬 WhatsApp</a>
-</div>
+<a href="tel:+919334063227" class="floating-btn call-btn">
+  📞
+</a>
+
+<a href="https://wa.me/919334063227" target="_blank" class="floating-btn whatsapp-btn">
+  💬
+</a>
 </body>
 </html>

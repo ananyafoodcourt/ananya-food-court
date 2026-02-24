@@ -113,7 +113,31 @@ footer {
         max-width: 220px;
     }
 }
-<
+.sticky-contact {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  z-index: 1000;
+}
+
+.sticky-contact a {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sticky-contact a:first-child {
+  background: #1565c0;
+}
+
+.sticky-contact a:last-child {
+  background: #25D366;
+}
 </style>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -165,18 +189,10 @@ footer {
     <a href="menu.pdf" target="_blank" class="btn menu-btn">View Menu</a>
 </section>
 
-<section data-aos="fade-left">
-    <h2>Order on WhatsApp</h2>
-    <!-- Replace number if needed -->
-    <a href="https://wa.me/919334063227" target="_blank" class="btn whatsapp-btn">
-        Chat on WhatsApp
-    </a>
-</section>
-
 <section data-aos="fade-up">    
    <h2>Contact Us</h2>
     <p>📍 Harnichak, Kisan Colony, Anisabad, Patna</p>
-    <p>📞 +91 9334063227</p>
+    <p>📞 <a href="tel:+919334063227">+91 9334063227</a></p>
     <p>⏰ Open Daily: 11:00 AM – 11:00 PM</p>
 </section>
 
@@ -193,16 +209,9 @@ footer {
     once: true
   });
 </script>
-
-<!-- Floating Phone -->
-<a href="tel:9334063227" class="floating-btn phone-btn">
-  <i class="fa-solid fa-phone"></i>
-</a>
-
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/919334063227" target="_blank" class="floating-btn whatsapp-btn-float">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
-
+<div class="sticky-contact">
+  <a href="tel:+919334063227">📞 Call Now</a>
+  <a href="https://wa.me/919334063227" target="_blank">💬 WhatsApp</a>
+</div>
 </body>
 </html>
